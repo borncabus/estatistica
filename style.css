@@ -1,63 +1,81 @@
-* {
+/* Reset de estilos para garantir consistência entre navegadores */
+body, h1, h2, h3, h4, p, button {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #ddd;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: 'Roboto', sans-serif; /* Adicionei a fonte 'Roboto' */
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
   background-color: #fff;
-  padding: 20px; /* Reduzir o padding para dispositivos móveis */
-  border-radius: 12px;
-  max-width: 400px; /* Adicionar uma largura máxima para evitar que o conteúdo se estenda demais */
-  width: 100%; /* Garantir que a largura seja 100% para dispositivos móveis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container h1 {
-  margin-bottom: 12px;
+h1 {
+  color: #004d40; /* Cor mais escura para h1 */
+  margin-bottom: 30px; /* Espaçamento inferior entre cabeçalhos */
 }
 
-.container p {
+h2 {
+  color: #00695c;
   margin-bottom: 20px;
 }
 
-.button-container {
-  display: flex;
-  flex-wrap: wrap; /* Permitir que os botões quebrem para a próxima linha em telas menores */
-  justify-content: center;
+h3 {
+  color: #007755;
+  margin-bottom: 10px;
 }
 
-.button-container button {
-  border: 0px;
-  padding: 12px 20px; /* Ajustar o padding para torná-lo mais proporcional */
-  border-radius: 8px;
-  text-transform: uppercase;
-  background: #007755;
-  color: #fff;
-  margin: 8px; /* Adicionar um pequeno espaçamento entre os botões */
+h4 {
+  color: #00894d; /* Cor mais clara para h4 */
+  margin-bottom: 10px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1px 3px 5px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #007755; /* Cor principal dos botões */
 }
 
-/* Adicionar regras de mídia para estilos específicos de dispositivos móveis */
-@media only screen and (max-width: 600px) {
+.button-container {
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #005e49; /* Cor ao passar o mouse */
+}
+
+p {
+  text-align: center;
+  margin-top: 10px; /* Espaçamento superior do parágrafo */
+  margin-bottom: 5px; /* Espaçamento inferior do parágrafo */
+  font-size: 14px; /* Tamanho de fonte reduzido */
+  color: #555;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
   .container {
-    padding: 10px; /* Reduzir ainda mais o padding para telas pequenas */
+    padding: 10px;
   }
 
-  .button-container button {
-    padding: 10px 16px; /* Ajustar o padding para telas pequenas */
+  button {
+    width: 100%;
   }
 }
