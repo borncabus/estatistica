@@ -82,18 +82,22 @@ p {
   color: #555;
 }
 
-/* Estilo do seletor */
 #periodoSelect {
-  padding: 10px 15px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  border: 2px solid #007755; /* Borda sólida */
-  border-radius: 5px; /* Borda arredondada */
-  background-color: #fff; /* Cor de fundo */
-  color: #333; /* Cor do texto */
-  appearance: none; /* Remove o estilo padrão do navegador */
-  cursor: pointer; /* Cursor indicando interação */
-  margin-bottom: 10px; /* Espaçamento inferior */
+  padding: 10px 30px 10px 15px; /* Espaçamento interno, deixando espaço para o ícone */
+  font-size: 16px;
+  border: 2px solid #007755;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-image: url('chevron-down-20-solid.svg'); /* Caminho para o ícone SVG */
+  background-repeat: no-repeat; /* Evita repetir o ícone */
+  background-position: right 10px center; /* Posiciona o ícone à direita do seletor */
+  background-size: 20px; /* Tamanho do ícone */
 }
+
 
 #periodoSelect option {
   padding: 10px; /* Espaçamento interno das opções */
