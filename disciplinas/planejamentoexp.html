@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Planejamento de Experimentos - Estatística UFPR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Planejamento de Experimentos</h1>
+            <p class="desc-materia">CM412 | 60 Horas</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Sobre a Matéria</h2>
+                <p class="sobre-paragrafo">
+                    O Planejamento de Experimentos é uma área fundamental da estatística que se concentra na criação, execução, 
+                    análise e interpretação de experimentos controlados. O objetivo é garantir que os dados coletados sejam adequados 
+                    para responder às perguntas de pesquisa de interesse e que os resultados sejam válidos e generalizáveis.
+                </p>
+                <p class="sobre-paragrafo">
+                    Técnicas de planejamento de experimentos incluem delineamentos completamente casualizados, blocos casualizados, 
+                    fatorial completo, e métodos de superfícies de resposta. Essas técnicas são aplicadas em diversas áreas, como 
+                    agricultura, indústria, ciências naturais e sociais, para otimizar processos e produtos, bem como para validar 
+                    hipóteses científicas.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Referências</h2>
+                <div class="button-container">
+                    <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button>Oferta da Disciplina - 2024/1</button></a>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Materiais de Apoio</h2>
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar materiais...">
+                    <button onclick="searchMaterials()" class="search-button">Pesquisar</button>
+                </div>
+                <div id="materialsList" class="button-container">
+                    <a href="assuntos/analise-variancia.html"><button>Análise de Variância</button></a>
+                    <a href="assuntos/delineamento-fatorial.html"><button>Delineamento Fatorial</button></a>
+                    <a href="assuntos/superficie-resposta.html"><button>Superfície de Resposta</button></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="search.js"></script> <!-- Assumindo que o script JavaScript está em um arquivo externo -->
+</body>
+</html>
