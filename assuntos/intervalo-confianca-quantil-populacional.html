@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Intervalo de Confiança para o Quantil Populacional</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Inclua o KaTeX CSS e JavaScript aqui -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.14.0/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.14.0/katex.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.14.0/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Intervalo de Confiança para o Quantil Populacional</h1>
+            <p class="desc-materia">Exemplo em R</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Sobre o Intervalo de Confiança para o Quantil Populacional</h2>
+                <p class="sobre-paragrafo">
+                    O intervalo de confiança para um quantil populacional é uma ferramenta estatística que permite estimar com um certo nível de confiança o valor de um quantil (por exemplo, o quartil ou percentil) de uma população, a partir de uma amostra de dados.
+                </p>
+                <p class="sobre-paragrafo">
+                    Em R, isso pode ser calculado usando funções como <code>quantile()</code> para estimar o quantil da amostra e <code>qnorm()</code> ou <code>qt()</code> para determinar os limites do intervalo de confiança, assumindo uma distribuição normal ou t de Student, respectivamente.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Exemplo em R</h2>
+                <pre><code>
+# Dados de exemplo
+dados <- c(23, 25, 27, 30, 32, 35, 36, 38, 40, 45)
+
+# Calculando o intervalo de confiança para o quartil 0.25
+quantil <- quantile(dados, probs = 0.25)
+n <- length(dados)
+alpha <- 0.05
+
+# Calculando os limites do intervalo de confiança
+limite_inferior <- quantil + qnorm(alpha/2) * sqrt(quantil * (1 - quantil) / n)
+limite_superior <- quantil + qnorm(1 - alpha/2) * sqrt(quantil * (1 - quantil) / n)
+
+# Exibindo o resultado
+cat("Intervalo de Confiança para o Quartil 0.25: (", limite_inferior, ",", limite_superior, ")\n")
+                </code></pre>
+            </section>
+            
+            <section>
+                <h2>Exemplos de Fórmulas em LaTeX</h2>
+                <p>Veja alguns exemplos de fórmulas matemáticas renderizadas com KaTeX:</p>
+                <p>Intervalo de confiança para a média com distribuição normal:</p>
+                <p>
+                    \[
+                    \bar{X} \pm z_{\frac{\alpha}{2}} \cdot \frac{\sigma}{\sqrt{n}}
+                    \]
+                </p>
+                <p>Fórmula da distribuição normal:</p>
+                <p>
+                    \[
+                    f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+                    \]
+                </p>
+                <p>Quantil \( q \) de uma distribuição:</p>
+                <p>
+                    \[
+                    P(X \leq q) = p
+                    \]
+                </p>
+            </section>
+            
+            <section>
+                <h2>Referências</h2>
+                <div class="button-container">
+                    <a href="#">Referência 1</a>
+                    <a href="#">Referência 2</a>
+                    <a href="#">Referência 3</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

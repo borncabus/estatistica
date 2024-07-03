@@ -39,13 +39,19 @@
             
             <section>
                 <h2>Materiais de Apoio</h2>
-                <div class="button-container">
-                    <a href="#"><button>Material 1</button></a>
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar materiais...">
+                    <button onclick="searchMaterials()" class="search-button">Pesquisar</button>
+                </div>
+                <div id="materialsList" class="button-container">
+                    <a href="assuntos/intervalo-confianca-quantil-populacional.html"><button>intervalo-confianca-quantil-populacional/button></a>
                     <a href="#"><button>Material 2</button></a>
                     <a href="#"><button>Material 3</button></a>
                 </div>
             </section>
         </main>
     </div>
+
+    <script src="search.js"></script> <!-- Assumindo que o script JavaScript está em um arquivo externo -->
 </body>
 </html>
