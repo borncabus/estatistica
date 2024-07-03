@@ -1,14 +1,17 @@
+/* Reset de margens e paddings */
 body, h1, h2, h3, h4, p, button {
   margin: 0;
   padding: 0;
 }
 
+/* Estilos gerais do corpo */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
 
+/* Container principal */
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -17,6 +20,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para títulos */
 h1 {
   color: #004d40;
   margin-bottom: 20px;
@@ -37,6 +41,33 @@ h4 {
   margin-bottom: 10px;
 }
 
+/* Estilo para a descrição da matéria */
+.desc-materia {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilo para parágrafos da seção "Sobre a Matéria" */
+.sobre-paragrafo {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Estilo geral para parágrafos */
+p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Estilos para botões */
 button {
   display: inline-block;
   padding: 10px 15px;
@@ -57,6 +88,7 @@ button {
   margin-bottom: 20px;
 }
 
+/* Efeitos de hover e focus para botões */
 button:hover {
   background-color: #005e49;
 }
@@ -65,6 +97,7 @@ button:focus {
   outline: 3px solid #004d40;
 }
 
+/* Estilos para links */
 a {
   color: #007755;
   text-decoration: none;
@@ -74,14 +107,7 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #555;
-}
-
+/* Estilos para o seletor de período */
 #periodoSelect {
   padding: 10px 30px 10px 15px; /* Espaçamento interno, deixando espaço para o ícone */
   font-size: 16px;
@@ -98,7 +124,6 @@ p {
   background-size: 20px; /* Tamanho do ícone */
 }
 
-
 #periodoSelect option {
   padding: 10px; /* Espaçamento interno das opções */
 }
@@ -113,7 +138,6 @@ p {
   outline: none; /* Remove o contorno padrão */
   border-color: #004d40; /* Cor da borda quando focado */
 }
-
 
 /* Responsividade */
 @media screen and (max-width: 600px) {
