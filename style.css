@@ -46,13 +46,14 @@ h4 {
   font-size: 18px;
   color: #555;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Estilo para parágrafos da seção "Sobre a Matéria" */
 .sobre-paragrafo {
   margin-top: 10px;
   margin-bottom: 15px;
+  text-align: left;
   font-size: 16px;
   line-height: 1.5;
   color: #555;
