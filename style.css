@@ -1,11 +1,10 @@
-/* Reset de estilos para garantir consistência entre navegadores */
 body, h1, h2, h3, h4, p, button {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Roboto', sans-serif; /* Adicionei a fonte 'Roboto' */
+  font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -19,8 +18,8 @@ body {
 }
 
 h1 {
-  color: #004d40; /* Cor mais escura para h1 */
-  margin-bottom: 20px; /* Espaçamento inferior entre cabeçalhos */
+  color: #004d40;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -34,14 +33,14 @@ h3 {
 }
 
 h4 {
-  color: #00894d; /* Cor mais clara para h4 */
+  color: #00894d;
   margin-bottom: 10px;
 }
 
 button {
   display: inline-block;
   padding: 10px 15px;
-  margin: 5px 0px; /* Margem uniforme em todos os lados */
+  margin: 5px 0px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -50,24 +49,67 @@ button {
   border: none;
   border-radius: 5px;
   color: #fff;
-  background-color: #007755; /* Cor principal dos botões */
+  background-color: #007755;
+  transition: background-color 0.3s ease;
 }
 
 .button-container {
-  margin-bottom: 15px; /* Aumentei o espaçamento inferior do container */
+  margin-bottom: 20px;
 }
 
 button:hover {
-  background-color: #005e49; /* Cor ao passar o mouse */
+  background-color: #005e49;
+}
+
+button:focus {
+  outline: 3px solid #004d40;
+}
+
+a {
+  color: #007755;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
   text-align: center;
-  margin-top: 10px; /* Espaçamento superior do parágrafo */
-  margin-bottom: 5px; /* Espaçamento inferior do parágrafo */
-  font-size: 14px; /* Tamanho de fonte reduzido */
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
   color: #555;
 }
+
+/* Estilo do seletor */
+#periodoSelect {
+  padding: 10px 15px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border: 2px solid #007755; /* Borda sólida */
+  border-radius: 5px; /* Borda arredondada */
+  background-color: #fff; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+  appearance: none; /* Remove o estilo padrão do navegador */
+  cursor: pointer; /* Cursor indicando interação */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+#periodoSelect option {
+  padding: 10px; /* Espaçamento interno das opções */
+}
+
+/* Estilo do seletor quando hover */
+#periodoSelect:hover {
+  border-color: #005e49; /* Cor da borda ao passar o mouse */
+}
+
+/* Estilo do seletor quando focado */
+#periodoSelect:focus {
+  outline: none; /* Remove o contorno padrão */
+  border-color: #004d40; /* Cor da borda quando focado */
+}
+
 
 /* Responsividade */
 @media screen and (max-width: 600px) {

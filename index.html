@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <title>Estatística UFPR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal dos Alunos de Estatística da UFPR com links importantes, disciplinas e informações adicionais.">
+    <meta name="keywords" content="Estatística, UFPR, Portal dos Alunos, Disciplinas, Links Importantes">
     <link rel="stylesheet" href="style.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -12,6 +14,9 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+    <style>
+      .periodo-container { display: none; }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -22,103 +27,148 @@
       
       <h3>Acesso Rápido</h3>
       <div class="button-container">
-        <a href="https://pra.ufpr.br/ru/ru-centro-politecnico/"><button>Cardápio do RU</button></a>
-        <a href="https://siga.ufpr.br/siga/"><button>Siga</button></a>
-        <a href="https://exatas.ufpr.br/ensalamento-1_2024/"><button>Ensalamento e Horários</button></a>
-        <a><button>Artigos Essenciais</button></a>
+        <a href="https://pra.ufpr.br/ru/ru-centro-politecnico/"><button aria-label="Cardápio do RU">Cardápio do RU</button></a>
+        <a href="https://siga.ufpr.br/siga/"><button aria-label="Siga">Siga</button></a>
+        <a href="https://exatas.ufpr.br/ensalamento-1_2024/"><button aria-label="Ensalamento e Horários">Ensalamento e Horários</button></a>
+        <a><button aria-label="Artigos Essenciais">Artigos Essenciais</button></a>
       </div>
       
       <h3>Curso de Estatística</h3>
       <div class="button-container">
-        <a href="http://www.coordest.ufpr.br/"><button>Coordenação do Curso</button></a>
-        <a href="http://www.est.ufpr.br/departamento.html"><button>Departamento do Curso</button></a>
-        <a href="https://chat.whatsapp.com/HFMF1fCG2mz1qfJH2lFqYI"><button>Comunidade dos Alunos</button></a>
-        <a href="http://www.prograd.ufpr.br/portal/wp-content/uploads/2024/02/Manual-para-Estudantes-da-UFPR-2024-3.pdf"><button>Manual do Estudante</button></a>
+        <a href="http://www.coordest.ufpr.br/"><button aria-label="Coordenação do Curso">Coordenação do Curso</button></a>
+        <a href="http://www.est.ufpr.br/departamento.html"><button aria-label="Departamento do Curso">Departamento do Curso</button></a>
+        <a href="https://chat.whatsapp.com/HFMF1fCG2mz1qfJH2lFqYI"><button aria-label="Comunidade dos Alunos">Comunidade dos Alunos</button></a>
+        <a href="http://www.prograd.ufpr.br/portal/wp-content/uploads/2024/02/Manual-para-Estudantes-da-UFPR-2024-3.pdf"><button aria-label="Manual do Estudante">Manual do Estudante</button></a>
       </div>
-      
+
       <h2>Disciplinas</h2>
-      
-      <h4>1º Período</h4>
-      <div class="button-container">
-        <a href="precalculo.html"><button>Pré-Cálculo</button></a>
-        <a href="estatisticaesociedade.html"><button>Estatística e Sociedade</button></a>
-        <a href="estbas.html"><button>Estatística Básica</button></a>
-        <a href="fundprog.html"><button>Fundamentos de Programação</button></a>
+      <select id="periodoSelect" onchange="mostrarPeriodo()">
+        <option value="">Selecione o Período</option>
+        <option value="periodo1">1º Período</option>
+        <option value="periodo2">2º Período</option>
+        <option value="periodo3">3º Período</option>
+        <option value="periodo4">4º Período</option>
+        <option value="periodo5">5º Período</option>
+        <option value="periodo6">6º Período</option>
+        <option value="periodo7">7º Período</option>
+        <option value="periodo8">8º Período</option>
+        <option value="optativas">Optativas</option>
+      </select>
+
+      <div id="periodo1" class="periodo-container">
+        <div class="button-container">
+          <a href="precalculo.html"><button aria-label="Pré-Cálculo">Pré-Cálculo</button></a>
+          <a href="estatisticaesociedade.html"><button aria-label="Estatística e Sociedade">Estatística e Sociedade</button></a>
+          <a href="estbas.html"><button aria-label="Estatística Básica">Estatística Básica</button></a>
+          <a href="fundprog.html"><button aria-label="Fundamentos de Programação">Fundamentos de Programação</button></a>
+        </div>
       </div>
       
-      <h4>2º Período</h4>
-      <div class="button-container">
-        <a><button>Cálculo I</button></a>
-        <a><button>Visualização de Dados Aplicada</button></a>
-        <a href="rprog.html"><button>Elementos de Programação para Estatística</button></a>
-        <a><button>Introdução a Geometria Analítica e Álgebra Linear</button></a>
-        <a><button>Fundamentos Matemáticos para Probabilidade</button></a>
+      <div id="periodo2" class="periodo-container">
+        <div class="button-container">
+          <a><button aria-label="Cálculo I">Cálculo I</button></a>
+          <a><button aria-label="Visualização de Dados Aplicada">Visualização de Dados Aplicada</button></a>
+          <a href="rprog.html"><button aria-label="Elementos de Programação para Estatística">Elementos de Programação para Estatística</button></a>
+          <a><button aria-label="Introdução a Geometria Analítica e Álgebra Linear">Introdução a Geometria Analítica e Álgebra Linear</button></a>
+          <a><button aria-label="Fundamentos Matemáticos para Probabilidade">Fundamentos Matemáticos para Probabilidade</button></a>
+        </div>
       </div>
       
-      <h4>3º Período</h4>
-      <div class="button-container">
-        <a><button>Cálculo II</button></a>
-        <a href="http://prob.estatisticaufpr.online/"><button>Teoria da Probabilidade I</button></a>
-        <a><button>Amostragem</button></a>
-        <a><button>Instrumentação Matemática para Estatística</button></a>
-        <a><button>SQL para Ciência de Dados</button></a>
+      <div id="periodo3" class="periodo-container">
+        <div class="button-container">
+          <a><button aria-label="Cálculo II">Cálculo II</button></a>
+          <a href="http://prob.estatisticaufpr.online/"><button aria-label="Teoria da Probabilidade I">Teoria da Probabilidade I</button></a>
+          <a><button aria-label="Amostragem">Amostragem</button></a>
+          <a><button aria-label="Instrumentação Matemática para Estatística">Instrumentação Matemática para Estatística</button></a>
+          <a><button aria-label="SQL para Ciência de Dados">SQL para Ciência de Dados</button></a>
+        </div>
       </div>
       
-      <h4>4º Período</h4>
-      <div class="button-container">
-        <a><button>Inferência Estatística</button></a>
-        <a href="http://prob.estatisticaufpr.online/"><button>Teoria da Probabilidade II</button></a>
-        <a href="http://prob.estatisticaufpr.online/"><button>Projetos de Análise de Dados</button></a>
+      <div id="periodo4" class="periodo-container">
+        <div class="button-container">
+          <a><button aria-label="Inferência Estatística">Inferência Estatística</button></a>
+          <a href="http://prob.estatisticaufpr.online/"><button aria-label="Teoria da Probabilidade II">Teoria da Probabilidade II</button></a>
+          <a href="http://prob.estatisticaufpr.online/"><button aria-label="Projetos de Análise de Dados">Projetos de Análise de Dados</button></a>
+        </div>
       </div>
       
-      <h4>5º Período</h4>
-      <div class="button-container">
-        <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button>Planejamento de Experimentos</button></a>
-        <a href="computacional.html"><button>Estatística Computacional</button></a>
-        <a href="http://leg.ufpr.br/~lucambio/CE313/20241S"><button>Estatística Não-Paramétrica</button></a>
-        <a><button>Modelos de Regressão Linear</button></a>
-        <a><button>Controle Estatístico de Qualidade</button></a>
+      <div id="periodo5" class="periodo-container">
+        <div class="button-container">
+          <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button aria-label="Planejamento de Experimentos">Planejamento de Experimentos</button></a>
+          <a href="computacional.html"><button aria-label="Estatística Computacional">Estatística Computacional</button></a>
+          <a href="http://leg.ufpr.br/~lucambio/CE313/20241S"><button aria-label="Estatística Não-Paramétrica">Estatística Não-Paramétrica</button></a>
+          <a><button aria-label="Modelos de Regressão Linear">Modelos de Regressão Linear</button></a>
+          <a><button aria-label="Controle Estatístico de Qualidade">Controle Estatístico de Qualidade</button></a>
+        </div>
       </div>
 
-      <h4>6º Período</h4>
-      <div class="button-container">
-        <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button>Modelos Lineares Generalizados</button></a>
-        <a href="http://www.leg.ufpr.br/~paulojus/CE312/"><button>Estatística Bayesiana</button></a>
-        <a href="http://leg.ufpr.br/~lucambio/CE313/20241S"><button>Aprendizado Supervisionado</button></a>
-        <a><button>Análise de Sobrevivência</button></a>
+      <div id="periodo6" class="periodo-container">
+        <div class="button-container">
+          <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button aria-label="Modelos Lineares Generalizados">Modelos Lineares Generalizados</button></a>
+          <a href="http://www.leg.ufpr.br/~paulojus/CE312/"><button aria-label="Estatística Bayesiana">Estatística Bayesiana</button></a>
+          <a href="http://leg.ufpr.br/~lucambio/CE313/20241S"><button aria-label="Aprendizado Supervisionado">Aprendizado Supervisionado</button></a>
+          <a><button aria-label="Análise de
+
+ Sobrevivência">Análise de Sobrevivência</button></a>
+        </div>
       </div>
 
-      <h4>7º Período</h4>
-      <div class="button-container">
-        <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button>Séries Temporais e Modelos Dinâmicos</button></a>
-        <a href="http://www.leg.ufpr.br/~paulojus/CE312/"><button>Estatística Multivariada</button></a>
-        <a href="http://leg.ufpr.br/~lucambio/CE313/20241S"><button>Aprendizado Não-Supervisionado</button></a>
-        <a><button>Laboratório A</button></a>
+      <div id="periodo7" class="periodo-container">
+        <div class="button-container">
+          <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button aria-label="Séries Temporais e Modelos Dinâmicos">Séries Temporais e Modelos Dinâmicos</button></a>
+          <a href="http://www.leg.ufpr.br/~paulojus/CE312/"><button aria-label="Estatística Multivariada">Estatística Multivariada</button></a>
+          <a href="http://leg.ufpr.br/~lucambio/CE313/20241S"><button aria-label="Aprendizado Não-Supervisionado">Aprendizado Não-Supervisionado</button></a>
+          <a><button aria-label="Laboratório A">Laboratório A</button></a>
+        </div>
       </div>
 
-      <h4>8º Período</h4>
-      <div class="button-container">
-        <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button>Análise de Dados Correlacionados</button></a>
-        <a><button>Laboratório B</button></a>
+      <div id="periodo8" class="periodo-container">
+        <div class="button-container">
+          <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button aria-label="Análise de Dados Correlacionados">Análise de Dados Correlacionados</button></a>
+          <a><button aria-label="Laboratório B">Laboratório B</button></a>
+        </div>
       </div>
 
-      <h2>Optativas</h2>
-      <div class="button-container">
-        <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button>Optativa 1</button></a>
-        <a href="http://www.leg.ufpr.br/~paulojus/CE312/"><button>Optativa 2</button></a>
-        <a href="http://leg.ufpr.br/~lucambio/CE313/20241S"><button>Optativa 3</button></a>
-        <a><button>Optativa 4</button></a>
+      <div id="optativas" class="periodo-container">
+        <div class="button-container">
+          <a href="http://leg.ufpr.br/~lucambio/CE311/20241S/index.html"><button aria-label="Optativa 1">Optativa 1</button></a>
+          <a href="http://www.leg.ufpr.br/~paulojus/CE312/"><button aria-label="Optativa 2">Optativa 2</button></a>
+          <a href="http://leg.ufpr.br/~lucambio/CE313/20241S"><button aria-label="Optativa 3">Optativa 3</button></a>
+          <a><button aria-label="Optativa 4">Optativa 4</button></a>
+        </div>
       </div>
 
       <h2>Informações Adicionais</h2>
       <div class="button-container">
-        <a href="curriculo.jpeg"><button>Periodização do Curso</button></a>
-        <a href="http://www.proec.ufpr.br/"><button>Extensão</button></a>
-        <a href="curriculo.jpeg"><button>Ferramentas Úteis</button></a>
+        <a href="curriculo.jpeg"><button aria-label="Periodização do Curso">Periodização do Curso</button></a>
+        <a href="http://www.proec.ufpr.br/"><button aria-label="Extensão">Extensão</button></a>
+        <a href="curriculo.jpeg"><button aria-label="Ferramentas Úteis">Ferramentas Úteis</button></a>
       </div>
       
-    <p> Site mantido por Matheus B. Cabús </p>
+      <p>Site mantido por Matheus B. Cabús</p>
       
     </div>
+    <script>
+      function mostrarPeriodo() {
+        var select = document.getElementById("periodoSelect");
+        var periodoContainers = document.getElementsByClassName("periodo-container");
+        for (var i = 0; i < periodoContainers.length; i++) {
+          periodoContainers[i].style.display = "none";
+        }
+        var selectedPeriodo = select.value;
+        if (selectedPeriodo) {
+          document.getElementById(selectedPeriodo).style.display = "block";
+          localStorage.setItem('selectedPeriodo', selectedPeriodo);
+        }
+      }
+
+      window.onload = function() {
+        var selectedPeriodo = localStorage.getItem('selectedPeriodo');
+        if (selectedPeriodo) {
+          document.getElementById("periodoSelect").value = selectedPeriodo;
+          mostrarPeriodo();
+        }
+      }
+    </script>
   </body>
 </html>
