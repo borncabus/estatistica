@@ -161,14 +161,20 @@
           localStorage.setItem('selectedPeriodo', selectedPeriodo);
         }
       }
-
+    
       window.onload = function() {
         var selectedPeriodo = localStorage.getItem('selectedPeriodo');
         if (selectedPeriodo) {
           document.getElementById("periodoSelect").value = selectedPeriodo;
           mostrarPeriodo();
+        } else {
+          // Definir um período padrão caso nenhum esteja selecionado
+          var defaultPeriodo = "periodo1"; // Altere para o período desejado
+          document.getElementById("periodoSelect").value = defaultPeriodo;
+          localStorage.setItem('selectedPeriodo', defaultPeriodo);
+          mostrarPeriodo();
         }
       }
-    </script>
+    </script>    
   </body>
 </html>
