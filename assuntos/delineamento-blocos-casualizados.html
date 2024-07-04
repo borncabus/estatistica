@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Delineamento em Blocos Casualizados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Inclua o KaTeX CSS e JavaScript aqui -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.14.0/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.14.0/katex.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.14.0/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Delineamento em Blocos Casualizados</h1>
+            <p class="desc-materia">Exemplo em R</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Sobre o Delineamento em Blocos Casualizados</h2>
+                <p class="sobre-paragrafo">
+                    O delineamento em blocos casualizados é uma técnica experimental utilizada para reduzir a variabilidade entre unidades experimentais, agrupando-as em blocos que são mais homogêneos entre si. Dentro de cada bloco, as unidades são aleatoriamente designadas aos tratamentos.
+                </p>
+                <p class="sobre-paragrafo">
+                    Esse método é particularmente útil quando há variabilidade significativa entre os blocos, permitindo um controle mais eficiente das fontes de variação e aumentando a precisão do experimento.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Exemplo em R</h2>
+                <pre><code>
+# Exemplo de dados
+tratamento <- rep(c("A", "B", "C"), each = 4)
+bloco <- rep(1:4, times = 3)
+resposta <- c(15, 14, 16, 13, 14, 13, 15, 12, 18, 17, 19, 16)
+
+# Dados em data frame
+dados <- data.frame(tratamento, bloco, resposta)
+
+# Análise de variância (ANOVA) para delineamento em blocos casualizados
+modelo <- aov(resposta ~ tratamento + bloco, data = dados)
+summary(modelo)
+
+# Exibindo o resultado
+cat("Análise de Variância para Delineamento em Blocos Casualizados:\n")
+print(summary(modelo))
+                </code></pre>
+            </section>
+            
+            <section>
+                <h2>Exemplos de Fórmulas em LaTeX</h2>
+                <p>Veja alguns exemplos de fórmulas matemáticas renderizadas com KaTeX:</p>
+                <p>Modelo para delineamento em blocos casualizados:</p>
+                <p>
+                    \[
+                    Y_{ij} = \mu + \tau_i + \beta_j + \epsilon_{ij}
+                    \]
+                </p>
+                <p>Onde:</p>
+                <ul>
+                    <li>\( Y_{ij} \) é a resposta observada no \( i \)-ésimo tratamento e \( j \)-ésimo bloco</li>
+                    <li>\( \mu \) é a média geral</li>
+                    <li>\( \tau_i \) é o efeito do \( i \)-ésimo tratamento</li>
+                    <li>\{ \beta_j \) é o efeito do \( j \)-ésimo bloco</li>
+                    <li>\{ \epsilon_{ij} \) é o erro aleatório</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Referências</h2>
+                <div class="button-container">
+                    <a href="#">Referência 1</a>
+                    <a href="#">Referência 2</a>
+                    <a href="#">Referência 3</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
