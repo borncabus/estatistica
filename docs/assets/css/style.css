@@ -150,7 +150,7 @@ a:hover {
   appearance: none;
   cursor: pointer;
   margin-bottom: 10px;
-  background-image: url('chevron-down-20-solid.svg'); /* Caminho para o ícone SVG */
+  background-image: url('../icons/chevron-down-20-solid.svg'); /* Caminho para o ícone SVG */
   background-repeat: no-repeat; /* Evita repetir o ícone */
   background-position: right 10px center; /* Posiciona o ícone à direita do seletor */
   background-size: 20px; /* Tamanho do ícone */
