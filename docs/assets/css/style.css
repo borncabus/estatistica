@@ -20,6 +20,14 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.index-container{
+  margin-bottom: 0px;
+}
+
+.top-menu{
+  margin-bottom: 30px;
+}
+
 /* Estilos para títulos */
 h1 {
   color: #004d40;
