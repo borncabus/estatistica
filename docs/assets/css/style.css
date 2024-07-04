@@ -25,6 +25,7 @@ body {
 }
 
 .top-menu{
+  margin-top: 0px;
   margin-bottom: 30px;
 }
 
@@ -243,6 +244,6 @@ nav ul li a:hover {
   }
 
   nav ul li a {
-    padding: 10px;
+    padding: auto;
   }
 }
