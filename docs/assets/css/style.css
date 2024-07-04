@@ -192,7 +192,7 @@ a:hover {
 /* Estilos para o menu */
 nav {
   background-color: #007755;
-  padding: 10px 0;
+  padding: 3px 0;
 }
 
 nav ul {
@@ -245,6 +245,6 @@ nav ul li a:hover {
   }
 
   nav ul li a {
-    padding: auto;
+    padding: 3px 0px;
   }
 }
