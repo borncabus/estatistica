@@ -193,6 +193,7 @@ a:hover {
 nav {
   background-color: #007755;
   padding: 3px 0;
+  border-radius: 5px;
 }
 
 nav ul {
