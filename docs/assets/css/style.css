@@ -192,4 +192,8 @@ a:hover {
   button {
     width: 100%;
   }
+
+  .search-container {
+    text-align: center;
+  }
 }
