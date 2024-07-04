@@ -171,6 +171,10 @@ a:hover {
   border-color: #004d40; /* Cor da borda quando focado */
 }
 
+.periodo-selector {
+    margin-bottom: 8px; /* Ajuste o valor conforme necessário */
+}
+
 .periodo-selector label {
     margin-right: 10px; /* Adiciona 10px de margem à direita do label */
 }
