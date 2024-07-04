@@ -1,0 +1,40 @@
+.
+├── LICENSE
+├── README.md
+├── docs
+│   ├── CNAME
+│   ├── assets
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── icons
+│   │   │   ├── android-chrome-192x192.png
+│   │   │   ├── android-chrome-512x512.png
+│   │   │   ├── apple-touch-icon.png
+│   │   │   ├── chevron-down-20-solid.svg
+│   │   │   ├── favicon-16x16.png
+│   │   │   ├── favicon-32x32.png
+│   │   │   ├── favicon.ico
+│   │   │   ├── mstile-150x150.png
+│   │   │   └── safari-pinned-tab.svg
+│   │   └── js
+│   │       └── search.js
+│   ├── assuntos
+│   │   ├── delineamento-blocos-casualizados.html
+│   │   └── intervalo-confianca-quantil-populacional.html
+│   ├── config
+│   │   ├── browserconfig.xml
+│   │   └── site.webmanifest
+│   ├── curriculo.jpeg
+│   ├── disciplinas
+│   │   ├── computacional.html
+│   │   ├── estatisticaesociedade.html
+│   │   ├── estbas.html
+│   │   ├── fundprog.html
+│   │   ├── naoparametrica.html
+│   │   ├── planejamentoexp.html
+│   │   ├── precalculo.html
+│   │   └── rprog.html
+│   └── index.html
+└── tree.txt
+
+8 directories, 29 files
