@@ -115,7 +115,7 @@ a:hover {
 /* Estilos para a caixa de pesquisa */
 .search-container {
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .search-input {
