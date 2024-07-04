@@ -23,36 +23,29 @@
 
       <h1>Portal dos Alunos</h1>
       
-      <h2>Links Importantes</h2>
-      
-      <h3>Acesso Rápido</h3>
+      <h2>Acesso Rápido</h2>
       <div class="button-container">
         <a href="https://pra.ufpr.br/ru/ru-centro-politecnico/"><button aria-label="Cardápio do RU">Cardápio do RU</button></a>
-        <a href="https://siga.ufpr.br/siga/"><button aria-label="Siga">Siga</button></a>
-        <a href="https://exatas.ufpr.br/ensalamento-1_2024/"><button aria-label="Ensalamento e Horários">Ensalamento e Horários</button></a>
-        <a><button aria-label="Artigos Essenciais">Artigos Essenciais</button></a>
-      </div>
-      
-      <h3>Curso de Estatística</h3>
-      <div class="button-container">
+        <a href="https://siga.ufpr.br/siga/"><button aria-label="Portal de Sistemas">Portal de Sistemas</button></a>
         <a href="http://www.coordest.ufpr.br/"><button aria-label="Coordenação do Curso">Coordenação do Curso</button></a>
         <a href="http://www.est.ufpr.br/departamento.html"><button aria-label="Departamento do Curso">Departamento do Curso</button></a>
         <a href="https://chat.whatsapp.com/HFMF1fCG2mz1qfJH2lFqYI"><button aria-label="Comunidade dos Alunos">Comunidade dos Alunos</button></a>
-        <a href="http://www.prograd.ufpr.br/portal/wp-content/uploads/2024/02/Manual-para-Estudantes-da-UFPR-2024-3.pdf"><button aria-label="Manual do Estudante">Manual do Estudante</button></a>
       </div>
 
-      <h2>Disciplinas</h2>
-      <select id="periodoSelect" onchange="mostrarPeriodo()">
-        <option value="periodo1">1º Período</option>
-        <option value="periodo2">2º Período</option>
-        <option value="periodo3">3º Período</option>
-        <option value="periodo4">4º Período</option>
-        <option value="periodo5">5º Período</option>
-        <option value="periodo6">6º Período</option>
-        <option value="periodo7">7º Período</option>
-        <option value="periodo8">8º Período</option>
-        <option value="optativas">Optativas</option>
-      </select>
+      <h2 class="periodo-selector">
+        <label for="periodoSelect">Disciplinas</label>
+        <select id="periodoSelect" onchange="mostrarPeriodo()">
+          <option value="periodo1">1º Período</option>
+          <option value="periodo2">2º Período</option>
+          <option value="periodo3">3º Período</option>
+          <option value="periodo4">4º Período</option>
+          <option value="periodo5">5º Período</option>
+          <option value="periodo6">6º Período</option>
+          <option value="periodo7">7º Período</option>
+          <option value="periodo8">8º Período</option>
+          <option value="optativas">Optativas</option>
+        </select>
+      </h2>
 
       <div id="periodo1" class="periodo-container">
         <div class="button-container">
@@ -138,8 +131,7 @@
       <h2>Informações Adicionais</h2>
       <div class="button-container">
         <a href="curriculo.jpeg"><button aria-label="Periodização do Curso">Periodização do Curso</button></a>
-        <a href="http://www.proec.ufpr.br/"><button aria-label="Extensão">Extensão</button></a>
-        <a href="curriculo.jpeg"><button aria-label="Ferramentas Úteis">Ferramentas Úteis</button></a>
+        <a href="http://www.prograd.ufpr.br/portal/wp-content/uploads/2024/02/Manual-para-Estudantes-da-UFPR-2024-3.pdf"><button aria-label="Manual do Estudante">Manual do Estudante</button></a>
       </div>
       
       <p>Site mantido por Matheus B. Cabús</p>
