@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>Fundamentos de Programação - Estatística UFPR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      
-      <h1>Fundamentos de Programação</h1>
-      <h4>CI240 - 60 Horas</h4>
-
-      <h2>Material de Apoio</h2>
-      <div class="button-container">
-        <a href="http://fprog.estatisticaufpr.online/"><button>Apostila Coletiva</button></a>
-      </div>
-
+        <header>
+            <h1>Fundamentos de Programação</h1>
+            <p class="desc-materia">CM210 | 60 Horas</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Sobre a Matéria</h2>
+                <p class="sobre-paragrafo">
+                    Fundamentos de Programação é uma disciplina que introduz os conceitos básicos da programação de computadores. 
+                    Os alunos aprendem a escrever algoritmos, usar estruturas de controle, manipular dados, e desenvolver programas 
+                    simples em uma linguagem de programação. A disciplina foca em técnicas de resolução de problemas e lógica de 
+                    programação.
+                </p>
+                <p class="sobre-paragrafo">
+                    Esta disciplina é essencial para aqueles que desejam seguir em áreas como ciência da computação, engenharia de 
+                    software, análise de dados, e outras áreas que exigem habilidades de programação. Tópicos abordados incluem 
+                    variáveis, tipos de dados, loops, funções, arrays e manipulação de strings.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Referências</h2>
+                <div class="button-container">
+                    <a href="http://leg.ufpr.br/~lucambio/CM210/20241S/"><button>Oferta da Disciplina - 2024/1</button></a>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Materiais de Apoio</h2>
+                
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar materiais...">
+                    <button onclick="searchMaterials()" class="search-button">Pesquisar</button>
+                </div>
+                
+                <h3>Introdução à Programação</h3>
+                <div class="button-container">
+                    <a href="../assuntos/introducao-programacao.html"><button>Introdução à Programação</button></a>
+                    <a href="../assuntos/primeiros-passos.html"><button>Primeiros Passos</button></a>
+                </div>
+                
+                <h3>Estruturas de Controle</h3>
+                <div class="button-container">
+                    <a href="../assuntos/estruturas-condicionais.html"><button>Estruturas Condicionais</button></a>
+                    <a href="../assuntos/loops.html"><button>Loops</button></a>
+                </div>
+                
+                <h3>Manipulação de Dados</h3>
+                <div class="button-container">
+                    <a href="../assuntos/variaveis-tipos-dados.html"><button>Variáveis e Tipos de Dados</button></a>
+                    <a href="../assuntos/arrays.html"><button>Arrays</button></a>
+                    <a href="../assuntos/strings.html"><button>Strings</button></a>
+                </div>
+                
+                <h3>Funções</h3>
+                <div class="button-container">
+                    <a href="../assuntos/funcoes.html"><button>Funções</button></a>
+                    <a href="../assuntos/parametros-retorno.html"><button>Parâmetros e Retorno</button></a>
+                </div>
+                
+                <h3>Depuração e Testes</h3>
+                <div class="button-container">
+                    <a href="../assuntos/depuracao.html"><button>Depuração</button></a>
+                    <a href="../assuntos/testes.html"><button>Testes</button></a>
+                </div>
+                
+                <h3>Materiais Adicionais</h3>
+                <div class="button-container">
+                    <a href="../assuntos/materiais-adicionais.html"><button>Materiais Adicionais</button></a>
+                    <a href="../assuntos/exercicios-praticos.html"><button>Exercícios Práticos</button></a>
+                    <a href="../assuntos/simulados.html"><button>Simulados</button></a>
+                    <a href="../assuntos/leitura-complementar.html"><button>Leitura Complementar</button></a>
+                </div>
+                
+            </section>
+        </main>
     </div>
-  </body>
+
+    <script src="../assets/js/search.js"></script>
+</body>
 </html>

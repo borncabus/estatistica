@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>Estatística e Sociedade - Estatística UFPR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <h1>Estatística e Sociedade</h1>
-
-      <h2>Conteúdo</h2>
-      <div class="button-container">
-        <a href="#"><button>Tópico 1</button></a>
-        <a href="#"><button>Tópico 2</button></a>
-        <a href="#"><button>Tópico 3</button></a>
-        <!-- Adicione mais tópicos conforme necessário -->
-      </div>
-
-      <h2>Materiais de Apoio</h2>
-      <div class="button-container">
-        <a href="#"><button>Material 1</button></a>
-        <a href="#"><button>Material 2</button></a>
-        <a href="#"><button>Material 3</button></a>
-        <!-- Adicione mais materiais conforme necessário -->
-      </div>
+        <header>
+            <h1>Estatística e Sociedade</h1>
+            <p class="desc-materia">CM310 | 60 Horas</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Sobre a Matéria</h2>
+                <p class="sobre-paragrafo">
+                    Estatística e Sociedade é uma disciplina que explora a aplicação da estatística na análise de questões sociais. 
+                    O curso aborda como a estatística é utilizada para coletar, analisar e interpretar dados que influenciam 
+                    políticas públicas, economia, saúde pública e outros aspectos da sociedade. A disciplina enfatiza a importância 
+                    da estatística na tomada de decisões informadas e na compreensão de fenômenos sociais.
+                </p>
+                <p class="sobre-paragrafo">
+                    Os alunos aprenderão sobre métodos de pesquisa, amostragem, análise de dados e apresentação de resultados. 
+                    Serão discutidos estudos de caso reais para ilustrar como a estatística pode ser usada para resolver problemas 
+                    sociais complexos. A disciplina também abordará questões éticas relacionadas à coleta e uso de dados.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Referências</h2>
+                <div class="button-container">
+                    <a href="http://leg.ufpr.br/~lucambio/CM310/20241S/"><button>Oferta da Disciplina - 2024/1</button></a>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Materiais de Apoio</h2>
+                
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar materiais...">
+                    <button onclick="searchMaterials()" class="search-button">Pesquisar</button>
+                </div>
+                
+                <h3>Introdução à Estatística Social</h3>
+                <div class="button-container">
+                    <a href="../assuntos/introducao-estatistica-social.html"><button>Introdução à Estatística Social</button></a>
+                    <a href="../assuntos/importancia-estatistica.html"><button>Importância da Estatística na Sociedade</button></a>
+                </div>
+                
+                <h3>Métodos de Pesquisa</h3>
+                <div class="button-container">
+                    <a href="../assuntos/metodos-pesquisa.html"><button>Métodos de Pesquisa</button></a>
+                    <a href="../assuntos/amostragem.html"><button>Amostragem</button></a>
+                </div>
+                
+                <h3>Análise de Dados</h3>
+                <div class="button-container">
+                    <a href="../assuntos/analise-dados.html"><button>Análise de Dados</button></a>
+                    <a href="../assuntos/interpretacao-resultados.html"><button>Interpretação de Resultados</button></a>
+                </div>
+                
+                <h3>Aplicações em Políticas Públicas</h3>
+                <div class="button-container">
+                    <a href="../assuntos/politicas-publicas.html"><button>Políticas Públicas</button></a>
+                    <a href="../assuntos/saude-publica.html"><button>Saúde Pública</button></a>
+                    <a href="../assuntos/economia.html"><button>Economia</button></a>
+                </div>
+                
+                <h3>Questões Éticas</h3>
+                <div class="button-container">
+                    <a href="../assuntos/etica-coleta-dados.html"><button>Ética na Coleta de Dados</button></a>
+                    <a href="../assuntos/etica-uso-dados.html"><button>Ética no Uso de Dados</button></a>
+                </div>
+                
+                <h3>Materiais Adicionais</h3>
+                <div class="button-container">
+                    <a href="../assuntos/materiais-adicionais.html"><button>Materiais Adicionais</button></a>
+                    <a href="../assuntos/exercicios-praticos.html"><button>Exercícios Práticos</button></a>
+                    <a href="../assuntos/simulados.html"><button>Simulados</button></a>
+                    <a href="../assuntos/leitura-complementar.html"><button>Leitura Complementar</button></a>
+                </div>
+                
+            </section>
+        </main>
     </div>
-  </body>
+
+    <script src="../assets/js/search.js"></script>
+</body>
 </html>

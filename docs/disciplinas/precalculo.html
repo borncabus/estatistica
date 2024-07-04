@@ -1,33 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>Pré-Cálculo - Estatística UFPR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <h1>Pré-Cálculo</h1>
-      <p>CM310 | 60 Horas</p>
-
-      <h2>Sobre a Matéria</h2>
-      
-      <h2>Conteúdo</h2>
-      <div class="button-container">
-        <a href="#"><button>Tópico 1</button></a>
-        <a href="#"><button>Tópico 2</button></a>
-        <a href="#"><button>Tópico 3</button></a>
-        <!-- Adicione mais tópicos conforme necessário -->
-      </div>
-
-      <h2>Materiais de Apoio</h2>
-      <div class="button-container">
-        <a href="#"><button>Material 1</button></a>
-        <a href="#"><button>Material 2</button></a>
-        <a href="#"><button>Material 3</button></a>
-        <!-- Adicione mais materiais conforme necessário -->
-      </div>
+        <header>
+            <h1>Pré-Cálculo</h1>
+            <p class="desc-materia">CM110 | 60 Horas</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Sobre a Matéria</h2>
+                <p class="sobre-paragrafo">
+                    Pré-Cálculo é uma disciplina que prepara os alunos para o estudo do cálculo diferencial e integral. 
+                    O curso cobre tópicos fundamentais como funções, equações, trigonometria, geometria analítica e 
+                    álgebra. A compreensão desses conceitos é crucial para o sucesso em cursos de cálculo e disciplinas 
+                    subsequentes em matemática e ciências aplicadas.
+                </p>
+                <p class="sobre-paragrafo">
+                    Esta disciplina proporciona uma base sólida em habilidades matemáticas que são essenciais para 
+                    a análise e solução de problemas em várias áreas, incluindo engenharia, física, economia e 
+                    estatística. Exemplos de tópicos abordados incluem a análise de funções polinomiais e racionais, 
+                    funções exponenciais e logarítmicas, e a resolução de sistemas de equações.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Referências</h2>
+                <div class="button-container">
+                    <a href="http://leg.ufpr.br/~lucambio/CM110/20241S/"><button>Oferta da Disciplina - 2024/1</button></a>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Materiais de Apoio</h2>
+                
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar materiais...">
+                    <button onclick="searchMaterials()" class="search-button">Pesquisar</button>
+                </div>
+                
+                <h3>Funções e Gráficos</h3>
+                <div class="button-container">
+                    <a href="../assuntos/funcoes-elementares.html"><button>Funções Elementares</button></a>
+                    <a href="../assuntos/graficos-funcoes.html"><button>Gráficos de Funções</button></a>
+                </div>
+                
+                <h3>Álgebra</h3>
+                <div class="button-container">
+                    <a href="../assuntos/equacoes-algebraicas.html"><button>Equações Algébricas</button></a>
+                    <a href="../assuntos/sistemas-equacoes.html"><button>Sistemas de Equações</button></a>
+                    <a href="../assuntos/desigualdades.html"><button>Desigualdades</button></a>
+                </div>
+                
+                <h3>Trigonometria</h3>
+                <div class="button-container">
+                    <a href="../assuntos/trigonometrias.html"><button>Trigonometria</button></a>
+                    <a href="../assuntos/identidades-trigonometricas.html"><button>Identidades Trigonométricas</button></a>
+                    <a href="../assuntos/equacoes-trigonometricas.html"><button>Equações Trigonométricas</button></a>
+                </div>
+                
+                <h3>Geometria Analítica</h3>
+                <div class="button-container">
+                    <a href="../assuntos/geometria-analitica.html"><button>Geometria Analítica</button></a>
+                    <a href="../assuntos/retas-circunferencias.html"><button>Retas e Circunferências</button></a>
+                    <a href="../assuntos/conicas.html"><button>Cônicas</button></a>
+                </div>
+                
+                <h3>Funções Exponenciais e Logarítmicas</h3>
+                <div class="button-container">
+                    <a href="../assuntos/funcoes-exponenciais.html"><button>Funções Exponenciais</button></a>
+                    <a href="../assuntos/funcoes-logaritmicas.html"><button>Funções Logarítmicas</button></a>
+                    <a href="../assuntos/equacoes-exponenciais-logaritmicas.html"><button>Equações Exponenciais e Logarítmicas</button></a>
+                </div>
+                
+                <h3>Materiais Adicionais</h3>
+                <div class="button-container">
+                    <a href="../assuntos/materiais-adicionais.html"><button>Materiais Adicionais</button></a>
+                    <a href="../assuntos/exercicios-praticos.html"><button>Exercícios Práticos</button></a>
+                    <a href="../assuntos/simulados.html"><button>Simulados</button></a>
+                    <a href="../assuntos/leitura-complementar.html"><button>Leitura Complementar</button></a>
+                </div>
+                
+            </section>
+        </main>
     </div>
-  </body>
+
+    <script src="../assets/js/search.js"></script>
+</body>
 </html>

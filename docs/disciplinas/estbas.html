@@ -1,30 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>Estatística Básica - Estatística UFPR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <h1>Pré-Cálculo</h1>
-
-      <h2>Estatística Básica</h2>
-      <div class="button-container">
-        <a href="#"><button>Tópico 1</button></a>
-        <a href="#"><button>Tópico 2</button></a>
-        <a href="#"><button>Tópico 3</button></a>
-        <!-- Adicione mais tópicos conforme necessário -->
-      </div>
-
-      <h2>Materiais de Apoio</h2>
-      <div class="button-container">
-        <a href="#"><button>Material 1</button></a>
-        <a href="#"><button>Material 2</button></a>
-        <a href="#"><button>Material 3</button></a>
-        <!-- Adicione mais materiais conforme necessário -->
-      </div>
+        <header>
+            <h1>Estatística Básica</h1>
+            <p class="desc-materia">CM110 | 60 Horas</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Sobre a Matéria</h2>
+                <p class="sobre-paragrafo">
+                    Estatística Básica é uma disciplina fundamental que introduz os conceitos e métodos básicos da estatística. 
+                    Os alunos aprendem a coletar, organizar, descrever, analisar e interpretar dados. A disciplina abrange tanto 
+                    estatísticas descritivas quanto inferenciais, proporcionando uma base sólida para estudos mais avançados em 
+                    estatística.
+                </p>
+                <p class="sobre-paragrafo">
+                    Os tópicos incluem medidas de tendência central e dispersão, distribuições de probabilidade, amostragem, 
+                    estimação, intervalos de confiança, testes de hipóteses e correlação. Essa disciplina é essencial para todos 
+                    que pretendem aplicar técnicas estatísticas em diversas áreas, como ciências naturais, sociais e humanas, 
+                    negócios e engenharia.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Referências</h2>
+                <div class="button-container">
+                    <a href="http://leg.ufpr.br/~lucambio/CM110/20241S/"><button>Oferta da Disciplina - 2024/1</button></a>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Materiais de Apoio</h2>
+                
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar materiais...">
+                    <button onclick="searchMaterials()" class="search-button">Pesquisar</button>
+                </div>
+                
+                <h3>Conceitos Básicos</h3>
+                <div class="button-container">
+                    <a href="../assuntos/conceitos-basicos.html"><button>Conceitos Básicos</button></a>
+                    <a href="../assuntos/estatistica-descritiva.html"><button>Estatística Descritiva</button></a>
+                </div>
+                
+                <h3>Distribuições de Probabilidade</h3>
+                <div class="button-container">
+                    <a href="../assuntos/distribuicoes-probabilidade.html"><button>Distribuições de Probabilidade</button></a>
+                    <a href="../assuntos/variaveis-aleatorias.html"><button>Variáveis Aleatórias</button></a>
+                </div>
+                
+                <h3>Inferência Estatística</h3>
+                <div class="button-container">
+                    <a href="../assuntos/estimacao.html"><button>Estimação</button></a>
+                    <a href="../assuntos/intervalos-confianca.html"><button>Intervalos de Confiança</button></a>
+                    <a href="../assuntos/testes-hipoteses.html"><button>Testes de Hipóteses</button></a>
+                </div>
+                
+                <h3>Análise de Correlação</h3>
+                <div class="button-container">
+                    <a href="../assuntos/correlacao.html"><button>Correlação</button></a>
+                    <a href="../assuntos/regressao.html"><button>Regressão</button></a>
+                </div>
+                
+                <h3>Materiais Adicionais</h3>
+                <div class="button-container">
+                    <a href="../assuntos/materiais-adicionais.html"><button>Materiais Adicionais</button></a>
+                    <a href="../assuntos/exercicios-praticos.html"><button>Exercícios Práticos</button></a>
+                    <a href="../assuntos/simulados.html"><button>Simulados</button></a>
+                    <a href="../assuntos/leitura-complementar.html"><button>Leitura Complementar</button></a>
+                </div>
+                
+            </section>
+        </main>
     </div>
-  </body>
+
+    <script src="../assets/js/search.js"></script>
+</body>
 </html>
