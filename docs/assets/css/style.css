@@ -139,9 +139,9 @@ a:hover {
   background-color: #005e49;
 }
 
-/* Estilo para o seletor de período */
+/* Estilos para o seletor de período */
 #periodoSelect {
-  padding: 10px 30px 10px 15px;
+  padding: 10px 30px 10px 15px; /* Espaçamento interno, deixando espaço para o ícone */
   font-size: 16px;
   border: 2px solid #007755;
   border-radius: 5px;
@@ -150,37 +150,25 @@ a:hover {
   appearance: none;
   cursor: pointer;
   margin-bottom: 10px;
-  background-image: url('../icons/chevron-down-20-solid.svg');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size;
-  float: right;
+  background-image: url('../icons/chevron-down-20-solid.svg'); /* Caminho para o ícone SVG */
+  background-repeat: no-repeat; /* Evita repetir o ícone */
+  background-position: right 10px center; /* Posiciona o ícone à direita do seletor */
+  background-size: 20px; /* Tamanho do ícone */
 }
 
 #periodoSelect option {
-  padding: 10px;
-}
-
-/* Estilo para o texto à esquerda */
-.h2-left {
-  float: left;
-}
-
-/* Estilo para o h2 que envolve o seletor */
-.periodo-selector {
-  overflow: hidden;
-  margin-bottom: 15px;
+  padding: 10px; /* Espaçamento interno das opções */
 }
 
 /* Estilo do seletor quando hover */
 #periodoSelect:hover {
-  border-color: #005e49;
+  border-color: #005e49; /* Cor da borda ao passar o mouse */
 }
 
 /* Estilo do seletor quando focado */
 #periodoSelect:focus {
-  outline: none;
-  border-color: #004d40;
+  outline: none; /* Remove o contorno padrão */
+  border-color: #004d40; /* Cor da borda quando focado */
 }
 
 /* Responsividade */
@@ -191,11 +179,5 @@ a:hover {
 
   button {
     width: 100%;
-  }
-
-  /* Alinha o seletor de períodos como bloco */
-  #periodoSelect {
-    float: none;
-    margin-bottom: 10px;
   }
 }
